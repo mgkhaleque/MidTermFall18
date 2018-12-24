@@ -8,7 +8,22 @@ public class Pattern {
 		 *
 		 *
 		 */
-		
+		int count = 1, j = 0;
+		int n = 100;
+
+		int[] array1 = new int[40];
+
+		while (n > 0) {
+			for (int i = 0; i < 10; i++) {
+				System.out.print(" " + n);
+				array1[j] = n;
+				n -= count;
+				j++;
+
+			}
+			count++;
+		}
+
 
 
 	}
