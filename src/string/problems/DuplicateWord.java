@@ -1,5 +1,11 @@
 package string.problems;
 
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Created by mrahman on 04/22/17.
  */
@@ -13,6 +19,31 @@ public class DuplicateWord {
 
         String st = "Java is a programming Language. Java is also an Island of Indonesia. Java is widely used language";
 
-    }
+        public static Set<String> duplicateWords(String s) {
 
+            DecimalFormat df = new DecimalFormat(".00");
+
+            if (s == null || s.isEmpty()) {
+                return Collections.emptySet();
+            }
+            Set<String> duplicateWords = new HashSet<>();
+            String[] array = s.split(" ");
+            double avgLength = (double) s.length() / array.length;
+
+            Set<String> set = new HashSet<>();
+            ArrayList<String> arraylist = new ArrayList<String>();
+            for (String word : array) {
+                arraylist.add(word);
+                if (!set.add(word)) {
+                    duplicateWords.add(word);
+                }
+            }
+            for (String word : duplicateWords) {
+                if (Collections.frequency(arraylist, word) > 1) {
+                    System.out.println("'" + word +"' occurs " + Collections.frequency(arraylist, word) + " times.");
+                }
+            }
+
+            return duplicateWords;
+    }
 }
