@@ -24,7 +24,7 @@ public class UseMap {
 		dc.add("ironman");
 		dc.add("Green Lantern");
 		dc.add("Flash");
-		
+
 		List<String> marvel = new ArrayList<>();
 		marvel.add("Leader");
 		marvel.add("Ironman");
