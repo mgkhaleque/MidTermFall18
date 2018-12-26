@@ -15,47 +15,41 @@ public class UseQueue {
 
 		Queue<Integer> nums = new LinkedList<Integer>();
 
-		System.out.println(nums.peek());
-		//System.out.println(nums.element());
+		//Adding elements to the Queue
+		q.add("Basar");
+		q.add("Milon");
+		q.add("Helal");
+		q.add("Achillis");
+		q.add("Hector");
 
-		System.out.println();
-		nums.offer(1);
-		nums.add(2);
-		nums.offer(3);
-		nums.add(4);
-		System.out.println(nums.peek());
-		System.out.println(nums.element());
+		System.out.println("Elements in Queue:"+q);
 
-		System.out.println("\n" + nums + "\n");
+		/*
+		 * We can remove element from Queue using remove() method,
+		 * this would remove the first element from the Queue
+		 */
+		System.out.println("Removed element: "+q.remove());
 
-		nums.remove();
-		nums.poll();
-		nums.remove();
-		nums.poll();
-		System.out.println(nums + "\n");
-		//System.out.println(nums.remove());
-		System.out.println(nums.poll());// poll is null as nothing has remain in loop
+		/*
+		 * element() method - this returns the head of the
+		 * Queue. Head is the first element of Queue
+		 */
+		System.out.println("Head: "+q.element());
 
-		System.out.println();
+		/*
+		 * poll() method - this removes and returns the
+		 * head of the Queue. Returns null if the Queue is empty
+		 */
+		System.out.println("poll(): "+q.poll());
 
-		for (int i=1; i <=4; i++){
-			System.out.println(nums.offer(i) + " ");
-		}
-		System.out.println("\n\n" + nums + "\n");
+		/*
+		 * peek() method - it works same as element() method,
+		 * however it returns null if the Queue is empty
+		 */
+		System.out.println("peek(): "+q.peek());
 
-		Iterator<Integer> printer = nums.iterator();
-
-		while (printer.hasNext()){
-
-			System.out.println(printer.next());
-		}
-		System.out.println("\n");
-
-		while (nums.isEmpty()){
-
-			System.out.println(nums.remove());
-		}
-
+		//Again displaying the elements of Queue
+		System.out.println("Elements in Queue:"+q);
 	}
-
 }
+
