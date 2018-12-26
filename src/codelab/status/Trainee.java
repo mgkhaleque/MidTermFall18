@@ -15,6 +15,7 @@ public class Trainee implements Comparable<Trainee> {
     }
 
     public String getFirstName() {
+
         return firstName;
     }
 
