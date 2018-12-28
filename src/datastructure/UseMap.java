@@ -11,7 +11,7 @@ public class UseMap {
 		 * Use For Each loop and while loop with Iterator to retrieve data.
 		 *
 		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
-		 */
+		 */-
 
 		List<String> games = new ArrayList<>();
 		games.add("Bolla");
