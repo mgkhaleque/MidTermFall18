@@ -72,34 +72,34 @@ public class DataReader {
 			}
 		}
 
-		System.out.println("========================================================|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||================================================================");
-		//retrieving data from database
+		System.out.println("--");
+		//retrieving data from database:
 		List<String> textRead = connect.readDataBase("SelfDrivingCar", "text");
 		for(String st:textRead){
 			System.out.println(st);
 		}
-		System.out.println("========================================================|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||================================================================");
+		System.out.println("--");
 
-		//Retrieving data from LinkedList
+		//Retrieving data from LinkedList:
 		System.out.println("FIFO order from LinkedList: ");
 		for(int i=0; i<linkedList.size(); i++){
 			System.out.println(linkedList.get(i));
 		}
-		System.out.println("========================================================|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||================================================================");
+		System.out.println("--");
 
-		//Retrieving data from Stack
+		//Retrieving data from Stack:
 		System.out.println("FILO order from stack: ");
 		for (int i=stack.size()-1; i>=0; i--) {
 			System.out.println(""+ stack.get(i));
 		}
-		System.out.println("========================================================|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||================================================================");
+		System.out.println("--");
 
 		//Use of Peek, Search & Pop
 		System.out.println("Peeking stack: "+ stack.peek());
 		System.out.println("Searching stack: "+stack.search("steps!"));
 		System.out.println("Popping stack: "+stack.pop());
 		System.out.println("Peeking again: "+stack.peek()); //To check if last element popped
-		System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+		System.out.println("--");
 
 		System.out.println("Retrieving data using for-each loop: ");
 		for(Object st: stack) {
@@ -113,7 +113,7 @@ public class DataReader {
 			System.out.print(stack.pop()+" ");
 		}
 		System.out.println();
-		System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+		System.out.println("--");
 
 		System.out.println("Retrieving data using iterator: ");
 		Iterator it = linkedList.iterator();
