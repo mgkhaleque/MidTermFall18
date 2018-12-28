@@ -12,6 +12,7 @@ public class UseArrayList {
 		 * Store all the sorted data into one of the databases.
 		 * 
 		 */
+
 		java.util.ArrayList<String> list = new java.util.ArrayList<String>();
 
 		list.add("One");
@@ -65,12 +66,12 @@ public class UseArrayList {
 			System.out.println("Next element: " + lit.next());
 		}
 
-		// Iterator to traverse the list
+		// Iterator to traverse the list:
 		Iterator it = list.listIterator();
 		while (it.hasNext()){
 			System.out.println(it.next());
 		}
-		//remove parameter PA
+		//remove parameter PA:
 		list.remove("Five");
 		System.out.println("after removing node");
 		it = list.listIterator();
