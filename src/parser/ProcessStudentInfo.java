@@ -81,22 +81,25 @@ public class ProcessStudentInfo {
 					}
 
 
-				//Store Qtp data into Qtp table in Database
-				connectToMongoDB.insertIntoMongoDB(seleniumStudents,"qtp");
-				//connectToSqlDB.insertDataFromArrayListToMySql(seleniumStudents, "qtp","studentList");
+					//Store Qtp data into Qtp table in Database
+					connectToMongoDB.insertIntoMongoDB(seleniumStudents, "qtp");
+					//connectToSqlDB.insertDataFromArrayListToMySql(seleniumStudents, "qtp","studentList");
 
-				//Store Selenium data into Selenium table in Database
+					//Store Selenium data into Selenium table in Database
 					connectToMongoDB.insertIntoMongoDB(seleniumStudents, "selenium");
 
-				//Retrieve Qtp students from Database
-               List<Student> stList = connectToMongoDB.readStudentListFromMongoDB("qtp");
-               for(Student st:stList){
-               	  System.out.println(st.getFirstName()+" "+st.getLastName()+" "+st.getScore()+" "+st.getId());
-			   }
+					//Retrieve Qtp students from Database
+					List<Student> stList = connectToMongoDB.readStudentListFromMongoDB("qtp");
+					for (Student st : stList) {
+						System.out.println(st.getFirstName() + " " + st.getLastName() + " " + st.getScore() + " " + st.getId());
+					}
 
-			   //Retrieve Selenium students from Database
-
-
+					//Retrieve Selenium students from Database
+					List<Student> st1List = connect.readStudentListFromMongoDB("selenium");
+					for (Student st : st1List) {
+						System.out.println(st.getFirstName() + " " + st.getLastName() + " " + st.getScore() + " " + st.getId());
+					}
+				}
 			}
 
 }
