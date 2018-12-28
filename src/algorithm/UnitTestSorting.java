@@ -24,7 +24,7 @@ public class UnitTestSorting {
         //Now implement Unit test for rest of the soring algorithm...................below
 
 
-        //bubble sort
+        //bubble sort:
 
         unSortedArray = new int[]{6,9,2,5,1,0,4};
 
@@ -42,7 +42,7 @@ public class UnitTestSorting {
 
 
 
-        //insertion sort
+        //insertion sort:
 
         unSortedArray = new int[]{6,9,2,5,1,0,4};
 
@@ -60,7 +60,7 @@ public class UnitTestSorting {
 
 
 
-        //merge sort
+        //merge sort:
 
         unSortedArray = new int[]{6,9,2,5,1,0,4};
 
@@ -78,7 +78,7 @@ public class UnitTestSorting {
 
 
 
-        //quick sort
+        //quick sort:
 
         unSortedArray = new int[]{6,9,2,5,1,0,4};
 
@@ -96,7 +96,7 @@ public class UnitTestSorting {
 
 
 
-        //heap sort
+        //heap sort:
 
         unSortedArray = new int[]{6,9,2,5,1,0,4};
 
@@ -114,7 +114,7 @@ public class UnitTestSorting {
 
 
 
-        //bucket sort
+        //bucket sort:
 
         unSortedArray = new int[]{6,9,2,5,1,0,4};
 
@@ -129,9 +129,6 @@ public class UnitTestSorting {
             ex.getMessage();
 
         }
-
-
-
 
 
     }
